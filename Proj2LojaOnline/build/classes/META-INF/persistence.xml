@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="Proj2LojaOnlinePU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>proj2lojaonline.DAL.Tamanho</class>
+    <class>proj2lojaonline.DAL.Cliente</class>
+    <class>proj2lojaonline.DAL.LinhaEncforn</class>
+    <class>proj2lojaonline.DAL.EncomForn</class>
+    <class>proj2lojaonline.DAL.Promocao</class>
+    <class>proj2lojaonline.DAL.Genero</class>
+    <class>proj2lojaonline.DAL.Produto</class>
+    <class>proj2lojaonline.DAL.Tipo</class>
+    <class>proj2lojaonline.DAL.Transportadora</class>
+    <class>proj2lojaonline.DAL.Codpostal</class>
+    <class>proj2lojaonline.DAL.EncomCliente</class>
+    <class>proj2lojaonline.DAL.MoradaDeEntrega</class>
+    <class>proj2lojaonline.DAL.Cor</class>
+    <class>proj2lojaonline.DAL.LinhaEnccliente</class>
+    <class>proj2lojaonline.DAL.Fornecedor</class>
+    <class>proj2lojaonline.DAL.Prodprom</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:orcl"/>
+      <property name="javax.persistence.jdbc.user" value="proj2"/>
+      <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+      <property name="javax.persistence.jdbc.password" value="1234"/>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
